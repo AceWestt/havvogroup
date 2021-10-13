@@ -250,18 +250,38 @@ a {
         flex-direction: column;
         align-items: center;
         @media screen and (max-width: $mobileBreakPoint) {
+          width: 100%;
           flex-direction: row;
           justify-content: center;
+          flex-wrap: wrap;
+          padding: 24px 0;
         }
         img {
           width: 44px;
           margin-bottom: 30px;
+          @media screen and (max-width: $mobileBreakPoint) {
+            width: 22px;
+            margin-bottom: 0;
+            flex-shrink: 0;
+          }
         }
         .title {
           font-size: 18px;
           font-weight: 500;
           color: #0d5c70;
           margin-bottom: 20px;
+          @media screen and (max-width: $mobileBreakPoint) {
+            font-size: 14px;
+            margin-bottom: 0;
+            flex-shrink: 0;
+            margin-left: 16px;
+          }
+        }
+        .btn {
+          @media screen and (max-width: $mobileBreakPoint) {
+            flex-shrink: 0;
+            margin-top: 16px;
+          }
         }
       }
     }
