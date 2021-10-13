@@ -1,0 +1,8 @@
+import "./App.scss";
+import Main from "./screens/Main";
+
+function App() {
+  return <Main />;
+}
+
+export default App;
