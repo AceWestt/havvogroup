@@ -18,7 +18,7 @@ const Footer = () => {
 
 export default Footer;
 
-const mails = [
+export const mails = [
   "makhmud.parpiev@havvogroup.uz",
   "ziyodilla.kholmirzaev@havvogroup.uz",
   "timur.rakhmatullaev@havvogroup.uz",

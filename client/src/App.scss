@@ -1,5 +1,5 @@
 $desktopGridWidht: 1400px;
-$mobileBreakPoint: 375px;
+$mobileBreakPoint: 985px;
 
 .section {
   width: 100%;
@@ -27,10 +27,10 @@ a {
   border: transparent;
   cursor: pointer;
   @media screen and (max-width: $mobileBreakPoint) {
-    width: 193px;
-    font-size: 14px;
-    border-radius: 20px;
-    padding: 15px 0;
+    width: 51.467vw;
+    font-size: 3.733vw;
+    border-radius: 5.333vw;
+    padding: 4vw 0;
   }
   &-main {
     background: #fff;
@@ -50,7 +50,7 @@ a {
   justify-content: space-between;
   padding: 0 20px;
   @media screen and (max-width: $mobileBreakPoint) {
-    padding: 0 20px;
+    padding: 0 5.333vw;
     width: 100%;
   }
   .header {
@@ -60,12 +60,12 @@ a {
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width: $mobileBreakPoint) {
-      margin-top: 40px;
+      margin-top: 10.667vw;
     }
     .logo {
       width: 146px;
       @media screen and (max-width: $mobileBreakPoint) {
-        width: 126px;
+        width: 33.6vw;
       }
       img {
         width: 100%;
@@ -108,7 +108,7 @@ a {
     color: #fff;
     width: 100%;
     @media screen and (max-width: $mobileBreakPoint) {
-      margin-bottom: 110px;
+      margin-bottom: 29.333vw;
       align-items: flex-start;
     }
     h1 {
@@ -118,8 +118,8 @@ a {
       width: 100%;
       text-align: center;
       @media screen and (max-width: $mobileBreakPoint) {
-        font-size: 40px;
-        margin: 0 0 26px 0;
+        font-size: 10.667vw;
+        margin: 0 0 6.933vw 0;
         text-align: left;
       }
     }
@@ -131,11 +131,11 @@ a {
       width: 100%;
       margin: 0 0 20px 0;
       @media screen and (max-width: $mobileBreakPoint) {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 4vw;
+        line-height: 4.8vw;
         text-align: left;
         max-width: 100%;
-        margin: 0 0 22px 0;
+        margin: 0 0 5.867vw 0;
       }
     }
     p {
@@ -145,10 +145,10 @@ a {
       text-align: center;
       margin: 0 0 20px 0;
       @media screen and (max-width: $mobileBreakPoint) {
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 4vw;
+        line-height: 4.8vw;
         text-align: left;
-        margin: 0 0 36px 0;
+        margin: 0 0 9.6vw 0;
       }
     }
   }
@@ -205,8 +205,8 @@ a {
     flex-direction: column;
     padding: 50px 60px 80px;
     @media screen and (max-width: $mobileBreakPoint) {
-      width: 335px;
-      padding: 67px 20px 64px;
+      width: 89.333vw;
+      padding: 17.867vw 5.333vw 17.067vw;
     }
     .top {
       width: 100%;
@@ -215,7 +215,7 @@ a {
       align-items: center;
       margin-bottom: 50px;
       @media screen and (max-width: $mobileBreakPoint) {
-        margin-bottom: 40px;
+        margin-bottom: 10.667vw;
       }
       .title {
         font-size: 16px;
@@ -224,16 +224,16 @@ a {
         border-bottom: 4px solid #00ccff;
         color: #0d5c70;
         @media screen and (max-width: $mobileBreakPoint) {
-          font-size: 16px;
-          padding-bottom: 6px;
-          border-bottom: 4px solid #00ccff;
+          font-size: 4.267vw;
+          padding-bottom: 1.6vw;
+          border-bottom: 1.067vw solid #00ccff;
         }
       }
       img {
         cursor: pointer;
         width: 20px;
         @media screen and (max-width: $mobileBreakPoint) {
-          width: 22px;
+          width: 5.867vw;
         }
       }
     }
@@ -254,13 +254,23 @@ a {
           flex-direction: row;
           justify-content: center;
           flex-wrap: wrap;
-          padding: 24px 0;
+          padding: 6.4vw 0;
+          border-top: 0.267vw solid #f3f3f3;
+          border-bottom: 0.267vw solid #f3f3f3;
+          &:first-child {
+            padding-top: 0;
+            border-top: transparent;
+          }
+          &:last-child {
+            padding-bottom: 0;
+            border-bottom: transparent;
+          }
         }
         img {
           width: 44px;
           margin-bottom: 30px;
           @media screen and (max-width: $mobileBreakPoint) {
-            width: 22px;
+            width: 5.867vw;
             margin-bottom: 0;
             flex-shrink: 0;
           }
@@ -271,16 +281,124 @@ a {
           color: #0d5c70;
           margin-bottom: 20px;
           @media screen and (max-width: $mobileBreakPoint) {
-            font-size: 14px;
+            font-size: 3.733vw;
             margin-bottom: 0;
             flex-shrink: 0;
-            margin-left: 16px;
+            margin-left: 4.267vw;
           }
         }
         .btn {
           @media screen and (max-width: $mobileBreakPoint) {
             flex-shrink: 0;
-            margin-top: 16px;
+            margin-top: 4.267vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9.6vw 5.333vw 18.667vw;
+  color: #fff;
+  .bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.5) 53.12%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+  .top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo-img {
+      width: 33.6vw;
+    }
+    .close-btn-img {
+      width: 5.867vw;
+      position: absolute;
+      right: 0;
+    }
+  }
+  .bottom {
+    width: 100%;
+    .title {
+      width: 100%;
+      font-size: 9.6vw;
+      line-height: 11.733vw;
+      font-weight: 500;
+      margin-bottom: 13.333vw;
+    }
+    .contacts {
+      width: 100%;
+      margin-bottom: 10.667vw;
+      .label {
+        width: 100%;
+        font-size: 5.333vw;
+        font-weight: 500;
+        margin-bottom: 8vw;
+      }
+      .list {
+        width: 100%;
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            flex-shrink: 0;
+            width: 4.267vw;
+            margin-right: 2.667vw;
+          }
+          span {
+            font-size: 4vw;
+          }
+        }
+      }
+      &.phones {
+        .list {
+          a {
+            margin-right: 8vw;
+            margin-bottom: 5.867vw;
+            &:nth-child(even) {
+              margin-right: 0;
+            }
+            &:last-child,
+            &:nth-last-child(2) {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      &.mails {
+        .list {
+          a {
+            margin-bottom: 6.4vw;
+            &:last-child {
+              margin-bottom: 0;
+            }
           }
         }
       }

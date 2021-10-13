@@ -10,7 +10,7 @@ import MobileMenu from "../components/MobileMenu";
 const smallScreenBreakPoint = 375;
 const Main = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isMobileOpen, setIsMobileOpen] = useState(true);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [smallScreen, setSmallScreen] = useState(false);
 
   const handleResize = () => {
@@ -43,7 +43,7 @@ const Main = () => {
         <Footer />
       </Section>
       {isModalOpen && <Modal setIsModalOpen={setIsModalOpen} />}
-      {isMobileOpen && <MobileMenu />}
+      {isMobileOpen && <MobileMenu setIsMobileOpen={setIsMobileOpen} />}
     </>
   );
 };

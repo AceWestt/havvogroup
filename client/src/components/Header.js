@@ -28,7 +28,7 @@ const Header = ({ setIsMobileOpen }) => {
 
 export default Header;
 
-const phones = [
+export const phones = [
   "(97) 446 40 10",
   "(99) 420 00 10",
   "(90) 959 19 99",
